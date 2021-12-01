@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="search-page post-list">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="search">
+      <form action="search" method="get">
+        <input type="text" id="search-box" name="query" placeholder="Enter a topic to find related articles">
+        <input type="submit" value="Search">
+      </form>
+      <ul id="search-results" class="search-results"></ul>
+    </div>
+    <script src="/assets/js/search-content.js"></script>
+    <script src="/assets/js/lunr.js"></script>
+    <script src="/assets/js/search.js"></script>
+</div>

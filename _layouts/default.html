@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+          {%- include sidebar.html -%}
+          {{ content }}
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
