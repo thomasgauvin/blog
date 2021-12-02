@@ -6,7 +6,9 @@ date: 2021-12-01 22:01:00 -5
 ---
 I wanted to host my blog on a separate domain and repository from my personal website to give it its own space. I had already configured my apex domain (thomasgauvin.com) to point to my thomasgauvin.github.io repository, following [the official Github guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
 
-So now, I needed to configure my subdomain (blog.thomasgauvin.com) to point to my separate blog repository. Over the years, Github has made it easier to set this up, so this set up is quite easy (when you know what you're doing! This [Stackoverflow thread](https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages) helped clear the discrepancies since Github had updated their flow). This is how I did it:
+So now, I needed to configure my subdomain (blog.thomasgauvin.com) to point to my separate blog repository. Over the years, Github has made it easier to set this up, but this has resulted in quite a few documentation sites being out of date ([this StackOverflow thread](https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages) helped clear things up).
+
+Nevertheless, setting up a subdomain is quite easy now (when you know what you're doing!).
 
 ## 1. Add the subdomain to your Namecheap Advanced DNS configuration
 
