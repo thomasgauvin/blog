@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to setup a subdomain to a Github Pages with Namecheap
+title: How to setup a subdomain for a Github Pages static site with Namecheap
 permalink: setting-up-a-subdomain-github-pages-namecheap
 date: 2021-12-01 22:01:00 -5
 ---
