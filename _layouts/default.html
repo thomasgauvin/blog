@@ -4,13 +4,29 @@
   {%- include head.html -%}
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-
   <body>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
           {%- include sidebar.html -%}
-          {{ content }}
+          <div>
+            {%- if page.url != "/" -%}
+            <div>
+              <a href="/">
+                <div style="display: flex;">
+                  <div class="chevron-left">
+                    <svg class="chevron-left-small" viewBox="0 0 24 24">
+                      <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+                    </svg>
+                  </div>
+                  Home
+                </div>
+                
+              </a>
+            </div>
+            {%- endif -%}
+            {{ content }}
+          </div>
       </div>
     </main>
 

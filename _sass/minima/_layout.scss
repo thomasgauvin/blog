@@ -33,6 +33,19 @@ div.title-and-social-links {
   margin-left: 0;
 }
 
+.chevron-left{
+  color: #386cb1;
+  margin-right: 0.5em;
+  padding-top: 0.1em;
+  
+  svg {
+    height: 1em;
+    width: 1em;
+    fill: #386cb1;
+
+  }
+}
+
 .navigation {
   margin-left: 0;
   list-style: none;
