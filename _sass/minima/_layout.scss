@@ -3,12 +3,13 @@
  */
 
 
+
  .title-link:hover {
    text-decoration: none;
  }
 
  .navigation li {
-   padding: 0.3em 0.4em;
+   padding: 0.5em 0.6em;
    width: 3em;
 
    &.current {
@@ -33,9 +34,23 @@ div.title-and-social-links {
   margin-left: 0;
 }
 
+.chevron-left{
+  color: #386cb1;
+  margin-right: 0.5em;
+  padding-top: 0.1em;
+  
+  svg {
+    height: 1em;
+    width: 1em;
+    fill: #386cb1;
+
+  }
+}
+
 .navigation {
   margin-left: 0;
   list-style: none;
+  
 }
 
 html {
@@ -134,6 +149,11 @@ html {
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .breadcrumb {
+    display: none;
+  }
+
   main.page-content {
     padding: 2em 0;
   }
@@ -171,6 +191,9 @@ html {
 
   .navigation {
     display: flex;
+    border-bottom: 1px solid lightgrey;
+    margin: 0em -2em 1em -2em;
+    padding: 0 2em 0 2em;
   
     li {
       margin-right: 1em;
@@ -182,6 +205,7 @@ html {
 
 @media only screen and (min-width: 1000px) {
   
+
   .home {
     display: flex;
   }
