@@ -5,6 +5,8 @@ permalink: "dynamic-output-bindings-azure-functions"
 date:   2021-12-11 18:02:06 -0400
 ---
 
+![](../uploads/2021-12-12-12-55-39.png)
+
 Bindings are a powerful Azure Functions feature which provide native integrations to other resources or services, such as databases or storage accounts. This makes it easier and faster to write functions that rely on other services. Two types of bindings exist: input (to import data) and output (to export data).
 
 Bindings are specified *declaratively* in the `function.json` file. **While this declarative style is convenient, it does not allow *dynamic binding*.** In other words, the binding can not be computed in the code at runtime, which is necessary in scenarios where the output destination is decided by certain logic in the code.
@@ -13,9 +15,9 @@ Bindings are specified *declaratively* in the `function.json` file. **While this
 
 ***For C# and .NET languages*, native dynamic binding is supported.** This is done through the use of the [Binder](https://github.com/Azure/azure-webjobs-sdk/blob/master/src/Microsoft.Azure.WebJobs.Host/Bindings/Runtime/Binder.cs) or [IBinder](https://github.com/Azure/azure-webjobs-sdk/blob/master/src/Microsoft.Azure.WebJobs/IBinder.cs) classes. This is how to do it:
 
-In this example, we have a Blob object that needs to be output from an Azure Function in either `containerA` or `containerB` based on some logic.
+<br><br />
 
-![](../uploads/2021-12-12-12-55-39.png)
+In this example, we have a Blob object that needs to be output from an Azure Function in either `containerA` or `containerB` based on some logic.
 
 ### 1. In function.json, remove declarative output bindings
 
