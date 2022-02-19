@@ -230,8 +230,15 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: white;
     vertical-align: text-top;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover{
+      opacity: 1;
+
+    }
 }
 
 .social-media-list {

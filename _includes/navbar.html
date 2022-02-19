@@ -1,0 +1,41 @@
+<div class="navbar">
+    <div class="navbar-contents">
+      <div class="title-and-nav">
+        <div class="title-and-description">
+          <a href="/" class="title-link"><div  class="title">{{ site.title }}</div></a>
+          <div class="description">
+            {{ site.description }}
+          </div>   
+        </div>
+        <div class="social-links">
+
+          {%- include social_notext.html -%}
+        </div>
+        <!-- <nav class="nav-links">
+          <ul class="navigation">
+            {% for link in site.navigation %}
+              {% assign current = nil %}
+              {% if page.url == link.url or page.layout == link.layout %}
+                {% assign current = 'current' %}
+              {% endif %}
+              <a class="{{ current }}" href="{{ link.url }}">
+                <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                  {{ link.text }}
+                </li>
+              </a>
+            {% endfor %}
+            <a class="{{ current }}" href="https://thomasgauvin.com">
+              <li>
+                Portfolio
+              </li>
+            </a>
+          </ul>
+        </nav> -->
+        
+       
+      </div>
+      
+      <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+    </div>
+    
+  </div>
