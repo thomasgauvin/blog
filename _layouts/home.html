@@ -1,28 +1,45 @@
 ---
 layout: default
 ---
-<div>
-  {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3 class="home-post-title">
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt | truncatewords: 40 }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-  <div class="copyright">
-    © All rights reserved. Built with Jekyll, styling inspired by Minimal Mistakes and Lumen for Gatsby.
+<div class="home-content">
+  <div class="home-profile">
+    <div class="personal-picture-wrapper">
+      <a href="/"><image src="/assets/picture.png" alt="a picture of me" class="personal-picture" /></a>
+    </div>
+    <div class="home-profile-description">
+      <h2>
+        Thomas Gauvin
+      </h2>
+      <div class="description-profile">
+        I'm learning by building projects and documenting my progress. I'm interested in software engineering, 
+        web development and AI. 
+      </div>
+    </div>
   </div>
+  <div>
+      {%- if site.posts.size > 0 -%}
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3 class="home-post-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt | truncatewords: 40 }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+    <div class="copyright">
+      © All rights reserved. Built with Jekyll.
+    </div>
+  </div>
+
 </div>

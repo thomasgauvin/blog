@@ -6,10 +6,10 @@
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <body>
     <main class="page-content" aria-label="Content">
+      {%- include navbar.html -%}
       <div class="wrapper">
         <div class="home">
-          {%- include sidebar.html -%}
-          <div>
+          <div class="max-width-div">
             {%- if page.url != "/" -%}
             <div class="breadcrumb">
               <a href="/">
