@@ -217,8 +217,9 @@ html {
   .personal-picture-wrapper {
     height: 3.5em;
     width: 3.5em; 
-    padding-right: 2em;
     margin-bottom: 1em;
+    padding-right: 0;
+
   }
 
   .home-profile-description {
@@ -230,7 +231,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em 0;
+    padding: 1em 0 2em 0;
   }
 }
 
