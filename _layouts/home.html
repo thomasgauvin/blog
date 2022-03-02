@@ -28,8 +28,17 @@ layout: default
               {{ post.title | escape }}
             </a>
           </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt | truncatewords: 40 }}
+          {%- if post.image_path -%}
+          <div class="post-list-container-of-image-and-description">
+            <img src={{ post.image_path }} alt="{{ post.image_alt }}" class="post-list-image" />
+            <div class="post-list-description">
+              {{ post.description | truncatewords: 40 }}
+            </div>
+          </div>
+          {%- else -%}
+          <div>
+            {{ post.description | truncatewords: 40 }}
+          </div>
           {%- endif -%}
         </li>
         {%- endfor -%}

@@ -2,6 +2,20 @@
  * Custom Styling
  */
 
+  .post-list-container-of-image-and-description{
+    display: flex;
+  }
+
+  .post-list-image {
+    width: 40%;
+    height: auto;
+    margin-right: 1.5em;
+  }
+
+  .post-list-description {
+    width: calc(60% - 1.5em);
+    height: auto;
+  }
 
  .home-profile-description {
    width: calc(100% - 5em - 2em);

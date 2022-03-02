@@ -3,9 +3,12 @@ layout: post
 title:  "How to create a React frontend and Express backend app"
 permalink: "create-react-frontend-express-backend-app"
 date:   2022-01-23 15:22:41 -0400
+image_path: uploads/React_express.png
+image_alt: Screenshot of the simple React Express full-stack application built
+description: I often come back to guides to create new React and Express applications, so in this blog post I document how to create a simple React frontend and Express backend application.
 ---
 
-![](uploads/2022-02-27-13-50-48.png)
+![](uploads/React_express.png)
 
 React and Express are two popular technologies to use when developing a full-stack web application. The Express app provides a REST API that is called asynchronously by the React application. This guide will get you started with a React frontend and a Express backend app as quickly as possible.
 

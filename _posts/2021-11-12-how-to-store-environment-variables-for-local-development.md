@@ -3,6 +3,7 @@ layout: post
 title: How to store environment variables for local development
 permalink: how-to-store-env-variables-for-local-development
 date: 2021-11-12 01:07:00 +0000
+description: Storing environment variables locally rather than in the code can prevent an unsecure exposure of your access keys, and it's quite easy to do! Here's how to store and use environment variables locally.
 
 ---
 Storing environment variables locally rather than in the code can prevent an unsecure exposure of your access keys, and it's quite easy to do!

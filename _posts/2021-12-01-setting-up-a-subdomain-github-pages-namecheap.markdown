@@ -3,6 +3,7 @@ layout: post
 title: How to setup a subdomain for a Github Pages static site with Namecheap
 permalink: setting-up-a-subdomain-github-pages-namecheap
 date: 2021-12-01 22:01:00 -5
+description: I wanted to host my blog on a separate domain and repository from my personal website to give it its own space. Here's how I setup my subdomain to point to my separate blog repository.
 ---
 I wanted to host my blog on a separate domain and repository from my personal website to give it its own space. I had already configured my apex domain (thomasgauvin.com) to point to my thomasgauvin.github.io repository, following [the official Github guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
 

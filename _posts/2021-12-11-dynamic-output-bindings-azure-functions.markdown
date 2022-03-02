@@ -3,6 +3,9 @@ layout: post
 title:  "Dynamic Output Bindings with Azure Functions"
 permalink: "dynamic-output-bindings-azure-functions"
 date:   2021-12-11 18:02:06 -0400
+image_path: ../uploads/2021-12-12-12-55-39.png
+image_alt: Azure Functions can dynamically bind their output blob destination
+description: Bindings are a powerful Azure Functions feature which provide native integrations to other resources or services, such as databases or storage accounts. While bindings are usually static, it is possible to have dynamic binding in C#. This is how.
 ---
 
 ![](../uploads/2021-12-12-12-55-39.png)
