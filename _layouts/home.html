@@ -32,7 +32,7 @@ layout: default
           <div class="post-list-container-of-image-and-description">
             <img src={{ post.image_path }} alt="{{ post.image_alt }}" class="post-list-image" />
             <div class="post-list-description">
-              {{ post.description | truncatewords: 40 }}
+              {{ post.description | truncatewords: 30 }}
             </div>
           </div>
           {%- else -%}
