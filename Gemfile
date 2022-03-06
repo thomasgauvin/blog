@@ -14,7 +14,7 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 219", group: :jekyll_plugins
 # If you have any plugins, put them here!
-
+gem 'jekyll-sitemap'
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
