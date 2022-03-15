@@ -82,7 +82,7 @@ Percentage of the requests served within a certain time (ms)
  100%   1524 (longest request)
 ```
 
-These results demonstrate the response times if 10 users concurrently made 10 requests each. With a mean of 0.3s and a longest time of 1.5s, we can see that these response times are decent.
+These results demonstrate the response times if 10 users concurrently made 10 requests each. With a mean of 0.7s and a longest time of 1.5s, we can see that these response times are decent.
 
 As expected, increasing the concurrency count increases the response times. With a concurrency of 100 users, the application response times make for a poor user experience. 
 
